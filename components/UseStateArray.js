@@ -11,12 +11,21 @@ const UseStateArray = () => {
   const claerData = () => {
     setBioData([]);
   };
+  const removeItem = (id) => {
+    const filteredElm = myBioData.filter((curElm) => {
+      return curElm.id !== id;
+    });
+    setBioData(filteredElm);
+  };
   return (
     <>
       {myBioData.map((curElem) => {
         return (
           <h1 className="heading" key={curElem.id}>
-            Name: {curElem.name} & Age: {curElem.age}: 25
+            Name: {curElem.name} & Age: {curElem.age}
+            <button className="innerBtn" onClick={() => removeItem(curElem.id)}>
+              Remove
+            </button>
           </h1>
         );
       })}

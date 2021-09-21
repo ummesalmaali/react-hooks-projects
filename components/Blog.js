@@ -14,7 +14,7 @@
 //   console.log(data);
 //   return (
 //     <div>
-//       {data.map((curElem) => {
+//       {data.slice(0,5).map((curElem) => {
 //         return (
 //           <div key={curElem.id}>
 //             <p>{curElem.id}</p>
