@@ -6,9 +6,17 @@ const Form = () => {
   const [allEntry, setAllEntry] = useState([]);
   const handleSubmit = (e) => {
     e.preventDefault();
-    const newEntry = { email: email, password: password };
-    setAllEntry([...allEntry, newEntry]);
-    console.log(allEntry);
+    if (email && password) {
+      const newEntry = {
+        id: new Date().getTime().toString(),
+        email,
+        password,
+      };
+      setAllEntry([...allEntry, newEntry]);
+      console.log(allEntry);
+      setEmail("");
+      setPassword("");
+    }
   };
   return (
     <>
@@ -39,6 +47,17 @@ const Form = () => {
         </div>
         <button type="submit">Login</button>
       </form>
+      <div>
+        {allEntry.map((curElem) => {
+          const { id, email, password } = curElem;
+          return (
+            <div key={id}>
+              <p>{email}</p>
+              <p>{password}</p>
+            </div>
+          );
+        })}
+      </div>
     </>
   );
 };
