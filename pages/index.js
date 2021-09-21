@@ -1,12 +1,14 @@
-import Head from "next/head";
-import Image from "next/image";
-import { useState } from "react";
-import Form from "../components/Forms/Form";
-import HooksRules from "../components/HooksRules";
-import ShortCirEval from "../components/ShortCirEval";
-import ToDo from "../components/ToDo";
-import UseStateArray from "../components/UseStateArray";
-import UseStateObj from "../components/UseStateObj";
+// import Head from "next/head";
+// import Image from "next/image";
+// import { useState } from "react";
+// import Form from "../components/Forms/Form";
+// import UseEffect from "../components/Forms/UseEffects/UseEffect";
+import UseEffect2 from "../components/Forms/UseEffects/UseEffect2";
+// import HooksRules from "../components/HooksRules";
+// import ShortCirEval from "../components/ShortCirEval";
+// import ToDo from "../components/ToDo";
+// import UseStateArray from "../components/UseStateArray";
+// import UseStateObj from "../components/UseStateObj";
 
 export default function Home() {
   // const [myName, setMyName] = useState("umme");
@@ -31,7 +33,9 @@ export default function Home() {
       {/* <UseStateObj /> */}
       {/* <ToDo /> */}
       {/* <ShortCirEval /> */}
-      <Form />
+      {/* <Form /> */}
+      {/* <UseEffect /> */}
+      <UseEffect2 />
     </div>
   );
 }
