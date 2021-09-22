@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/Image";
+import { FcApproval, IconName } from "react-icons/fc";
 const GitHubUsers = ({ users }) => {
   return (
     <div>
@@ -23,7 +24,9 @@ const GitHubUsers = ({ users }) => {
                       ></Image>
                     </div>
                     <div className="ml-3 w-100">
-                      <h4 className="mb-0 mt-0 textLeft">{title}</h4>{" "}
+                      <h4 className="mb-0 mt-0 textLeft">
+                        {title} <FcApproval></FcApproval>
+                      </h4>{" "}
                       <span className="textLeft">{url}</span>
                       <div className="p-2 mt-2 bg-primary d-flex justify-content-between rounded stats text-white">
                         <div className="d-flex flex-column">

@@ -231,6 +231,17 @@ h2 {
   margin: auto;
   height: 200px;
 }
+.card:hover {
+  width: 500px;
+  height: 250px;
+  background-color: cadetblue;
+  color: #fff;
+  transition: 3s ease-in-out;
+  -webkit-transition: 3s ease;
+  -moz-transition: 3s ease;
+  -ms-transition: 3s ease;
+  -o-transition: 3s ease;
+}
 .image {
   min-width: 155px;
   margin-right: 20px;

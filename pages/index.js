@@ -3,6 +3,9 @@
 // import { useState } from "react";
 // import Form from "../components/Forms/Form";
 // import UseEffect from "../components/Forms/UseEffects/UseEffect";
+import ComA from "../components/Context/ComA";
+import Reducer from "../components/Forms/UseEffects/Reducer";
+import Uncontrolled from "../components/Forms/UseEffects/Uncontrolled";
 import UseEffect2 from "../components/Forms/UseEffects/UseEffect2";
 import UseEffectApi from "../components/UseEffectApi";
 // import HooksRules from "../components/HooksRules";
@@ -37,7 +40,10 @@ export default function Home() {
       {/* <Form /> */}
       {/* <UseEffect /> */}
       {/* <UseEffect2 /> */}
-      <UseEffectApi />
+      {/* <UseEffectApi /> */}
+      {/* <Uncontrolled /> */}
+      {/* <Reducer /> */}
+      <ComA />
     </div>
   );
 }
