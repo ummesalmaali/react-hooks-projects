@@ -4,6 +4,7 @@
 // import Form from "../components/Forms/Form";
 // import UseEffect from "../components/Forms/UseEffects/UseEffect";
 import UseEffect2 from "../components/Forms/UseEffects/UseEffect2";
+import UseEffectApi from "../components/UseEffectApi";
 // import HooksRules from "../components/HooksRules";
 // import ShortCirEval from "../components/ShortCirEval";
 // import ToDo from "../components/ToDo";
@@ -35,7 +36,8 @@ export default function Home() {
       {/* <ShortCirEval /> */}
       {/* <Form /> */}
       {/* <UseEffect /> */}
-      <UseEffect2 />
+      {/* <UseEffect2 /> */}
+      <UseEffectApi />
     </div>
   );
 }
