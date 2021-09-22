@@ -5,7 +5,7 @@ const ComC = () => {
   const myName = useContext(myData);
   return (
     <div>
-      <h1>this is for c {myName}</h1>
+      <h1>this is for d c {myName}</h1>
     </div>
   );
 };
